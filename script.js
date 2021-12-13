@@ -23,3 +23,5 @@ if(navigator.geolocation) {
         alert(`Sorry! Could not get your location`);
     });
 }
+
+// Displaying a Map Using Leaflet Library
