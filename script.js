@@ -29,3 +29,5 @@ if(navigator.geolocation) {
 // Displaying a Map Marker
 
 // Rendering Workout Input Form
+
+// Project Architecture
