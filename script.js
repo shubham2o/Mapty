@@ -31,3 +31,5 @@ if(navigator.geolocation) {
 // Rendering Workout Input Form
 
 // Project Architecture
+
+// Refractoring for Project Architecture
