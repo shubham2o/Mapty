@@ -1,5 +1,6 @@
 'use strict';
 
+
 // prettier-ignore
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -11,7 +12,9 @@ const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 
+
 let map, mapEvent;
+
 
 // Using the Geolocation API
 if(navigator.geolocation) {
@@ -67,6 +70,7 @@ form.addEventListener("submit", function(e) {
         .openPopup();
     });
 });
+
 
 inputType.addEventListener("change", function() {
     inputElevation.closest(".form__row").classList.toggle("form__row--hidden");
