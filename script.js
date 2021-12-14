@@ -16,7 +16,7 @@ const inputElevation = document.querySelector('.form__input--elevation');
 // Managing Workout Data : Creating Classes
 class Workout {
     date = new Date();
-    id = (new Date() + " ").slice(-10);
+    id = (Date.now() + "").slice(-10);
 
     constructor (coords, distance, duration) {
         // this.date = ... 
