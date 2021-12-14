@@ -57,8 +57,8 @@ class Cycling extends Workout {
 }
 
 
-const run1 = new Running([39, -12], 5.2, 24, 178)
-const cycling1 = new Cycling([39, -12], 27, 95, 523);
+// const run1 = new Running([39, -12], 5.2, 24, 178)
+// const cycling1 = new Cycling([39, -12], 27, 95, 523);
 
 
 // APPLICATION ARCHITECTURE
@@ -118,8 +118,8 @@ class App {
 }
 
 
-const app = new App();
-app._getPosition();
+// const app = new App();
+// app._getPosition();
 
 
 form.addEventListener("submit", function(e) {
@@ -130,16 +130,17 @@ form.addEventListener("submit", function(e) {
 
     // Displaying a Map Marker
     const { lat, lng } = this.#mapEvent.latlng;
-    L
-        .marker([lat, lng])
-        .addTo(map)
-        .bindPopup(L.popup({
+    L.marker([lat, lng])
+    .addTo(this.#map)
+    .bindPopup(
+        L.popup({
             maxWidth: 250,
             minWidth: 100,
             autoclose: false,
             closeOnClick: false,
             className: "running-popup",
-        }))
+        })
+    )
     .setPopupContent(`Workout`)
     .openPopup();
 });
